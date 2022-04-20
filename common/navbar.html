@@ -1,31 +1,38 @@
-<nav style="background-color: #336699 !important;" class="navbar navbar-expand-md navbar-dark fixed-top">
+<!-- Based on codepen.io example from Simon Köhler  -->
+
+<nav style="background-color: #336699 !important;" class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="index.html">ISSRE 2022</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <a class="navbar-brand" style="margin-right: 5em;" href="index.html">ISSRE 2022</a>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+        <div class="hamburger-toggle">
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </button>
+        <div class="collapse navbar-collapse" id="navbar-content">
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
 
                 <!-- Topics of Interest -->
-                <li class="nav-item" id="topicsNavItem">
-                    <a class="nav-link hoverable" aria-current="page" href="topics-of-interest.html">Topics of
-                        Interest</a>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="topics-of-interest.html">Topics of Interest</a>
                 </li>
 
                 <!-- Dates -->
                 <li class="nav-item">
-                    <a class="nav-link hoverable" aria-current="page" href="important-dates.html">Dates</a>
+                    <a class="nav-link" aria-current="page" href="important-dates.html">Dates</a>
                 </li>
 
                 <!-- Calls -->
-                <li class="nav-item dropdown" id="callsNavItem">
-                    <a class="nav-link dropdown-toggle hoverable" href="#" role="button" id="dropdownCalls" data-bs-toggle="dropdown" aria-expanded="false">Calls</a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownCalls">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Calls</a>
+                    <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="calls_cfp-research.html">CFP Research</a></li>
                         <!-- <li><a class="dropdown-item disabled" href="#">CFP J1C2</a></li> -->
                         <li><a class="dropdown-item" href="calls_cfp-industry.html">CFP Industry</a></li>
-                        <li><a class="dropdown-item" href="calls_cfw-workshops.html">Call for Workshops</a></li>
+                        <li><a class="dropdown-item" href="calls_cfw-workshops.html">CFP for Workshops</a></li>
                         <li><a class="dropdown-item" href="calls_cfp-fast-abstracts.html">CFP Fast Abstracts</a></li>
                         <li><a class="dropdown-item disabled" href="#">CFP Tutorials</a></li>
                         <li><a class="dropdown-item disabled" href="#">CFP Doctoral Symposium</a></li>
@@ -34,31 +41,35 @@
 
                 <!-- Submission -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle hoverable" href="#" role="button" id="dropdownSubmission" data-bs-toggle="dropdown" aria-expanded="false">Submission</a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownSubmission">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Submission</a>
+                    <ul class="dropdown-menu shadow">
                         <li><a class="dropdown-item" target="_blank" href="https://easychair.org/conferences/?conf=issre22">Research Track</a></li>
-                        <!-- <li><a class="dropdown-item" href="#">J1C2</a></li> -->
+                        <!-- <li><a class="dropdown-item" href="#">CFP J1C2</a></li> -->
                         <li><a class="dropdown-item" target="_blank" href="https://easychair.org/conferences/?conf=ieeeissre2022industr">Industry Track</a></li>
                         <li><a class="dropdown-item" target="_blank" href="https://easychair.org/conferences/?conf=issre22">Fast Abstracts</a></li>
                         <li><a class="dropdown-item disabled" target="_blank" href="#">Doctoral Symposium</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <a class="dropdown-item" target="_blank" href="mailto:wdong@nudt.edu.cn,barbara.gallina@mdu.se,mei.nagappan@uwaterloo.ca?subject=ISSRE 2022 – Workshop Proposal">Workshop Proposals</a></li>
-                <!-- <li><a class="dropdown-item disabled" href="#">Workshops &raquo;</a>
-                            <ul class="submenu dropdown-menu">
-                                <li><a class="dropdown-item disabled" href="#">Workshop #1</a></li>
-                                <li><a class="dropdown-item disabled" href="#">Workshop #2</a></li>
+                        <li><a class="dropdown-item" target="_blank" href="mailto:wdong@nudt.edu.cn,barbara.gallina@mdu.se,mei.nagappan@uwaterloo.ca?subject=ISSRE 2022 – Workshop Proposal">Workshop Proposals</a></li>
+                        <li><a class="dropdown-item disabled" target="_blank" href="#">Tutorial Proposals</a></li>
+                        <!-- <li class="dropend">
+                            <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Workshops</a>
+                            <ul class="dropdown-menu shadow">
+                                <li><a class="dropdown-item" target="_blank" href=""> Workshop 1</a></li>
+                                <li><a class="dropdown-item" target="_blank" href=""> Workshop 2</a></li>
+                                <li><a class="dropdown-item" target="_blank" href=""> Workshop 3</a></li>
+                                <li><a class="dropdown-item" target="_blank" href=""> Workshop 4</a></li>
+                                <li><a class="dropdown-item" target="_blank" href=""> Workshop 5</a></li>
                             </ul>
                         </li> -->
-
-                </ul>
+                    </ul>
                 </li>
 
                 <!-- Program -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle hoverable" href="#" role="button" id="dropdownProgram" data-bs-toggle="dropdown" aria-expanded="false">Program</a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownProgram">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Program</a>
+                    <ul class="dropdown-menu shadow">
                         <li><a class="dropdown-item disabled" href="#">Full Program</a></li>
                         <li><a class="dropdown-item disabled" href="#">Research papers</a></li>
                         <!-- <li><a class="dropdown-item disabled" href="#">Journal-First</a></li> -->
@@ -67,53 +78,57 @@
                         <li><a class="dropdown-item" href="calls_prg_nfs.html">New Faculty Symposium</a></li>
                         <li><a class="dropdown-item disabled" href="#">Fast Panel and Abstracts</a></li>
                         <li><a class="dropdown-item disabled" href="#">Tutorials</a></li>
-                        <li><a class="dropdown-item disabled" href="#">Workshops program &raquo;</a>
-                            <ul class="submenu dropdown-menu">
-                                <li><a class="dropdown-item disabled" href="#">Workshop #1</a></li>
-                                <li><a class="dropdown-item disabled" href="#">Workshop #2</a></li>
+                        <!-- <li class="dropend">
+                            <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Workshops Program</a>
+                            <ul class="dropdown-menu shadow">
+                                <li><a class="dropdown-item" target="_blank" href=""> Workshop 1</a></li>
+                                <li><a class="dropdown-item" target="_blank" href=""> Workshop 2</a></li>
+                                <li><a class="dropdown-item" target="_blank" href=""> Workshop 3</a></li>
+                                <li><a class="dropdown-item" target="_blank" href=""> Workshop 4</a></li>
+                                <li><a class="dropdown-item" target="_blank" href=""> Workshop 5</a></li>
                             </ul>
-                        </li>
+                        </li> -->
                     </ul>
                 </li>
 
                 <!-- Committees -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle hoverable" href="#" role="button" id="dropdownCommittee" data-bs-toggle="dropdown" aria-expanded="false">Committees</a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownCommittee">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Committees</a>
+                    <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="committee_SC.html">Steering Committee</a></li>
                         <li><a class="dropdown-item" href="committee_OC.html">Organizing Committee</a></li>
                         <li><a class="dropdown-item" href="committee_research-PC.html">Research PC</a></li>
-                        <li><a class="dropdown-item " href="committee_industry-PC.html">Industry PC</a></li>
+                        <li><a class="dropdown-item" href="committee_industry-PC.html">Industry PC</a></li>
                     </ul>
                 </li>
 
                 <!-- Attend -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle hoverable" href="#" role="button" id="dropdownAttend" data-bs-toggle="dropdown" aria-expanded="false">Attend</a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownAttend">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Attend</a>
+                    <ul class="dropdown-menu">
                         <li><a class="dropdown-item disabled" href="#">Registration</a></li>
                         <li><a class="dropdown-item disabled" href="#">Venue</a></li>
                         <li><a class="dropdown-item disabled" href="#">Travel Info</a></li>
                         <li><a class="dropdown-item disabled" href="#">Lodging</a></li>
                         <li><a class="dropdown-item disabled" href="#">Explore Charlotte</a></li>
-                        <!-- <li><a class="dropdown-item" href="#">Conference Model Instructions</a></li> -->
+                        <!-- <li><a class="dropdown-item disabled" href="#">Conference Model Instructions</a></li> -->
                     </ul>
                 </li>
 
                 <!-- About -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle hoverable" href="#" role="button" id="dropdownAbout" data-bs-toggle="dropdown" aria-expanded="false">About</a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownAbout">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">About</a>
+                    <ul class="dropdown-menu">
                         <li><a class="dropdown-item disabled" href="#">Sponsorship</a></li>
                         <li><a class="dropdown-item" href="about_statistics.html">Conference Statistics</a></li>
                         <li><a class="dropdown-item" href="about_issre-confs.html">ISSRE Conferences</a></li>
-                        <li><a class="dropdown-item" href="https://ieeexplore.ieee.org/xpl/conhome/1000700/all-proceedings" target="_blank">Past Proceedings</a></li>
+                        <li><a class="dropdown-item" target="_blank" href="https://ieeexplore.ieee.org/xpl/conhome/1000700/all-proceedings">Past Proceedings</a></li>
                         <li><a class="dropdown-item" href="about_30-years.html">Highlights from 30 years</a></li>
-
-                        <li><a class="dropdown-item" href="#">Tributes &raquo;</a>
-                            <ul class="submenu dropdown-menu">
-                                <li><a class="dropdown-item" href="about_tributes_JM.html">John Musa</a></li>
-                                <li><a class="dropdown-item" href="about_tributes_JCL.html">Jean-Claude Laprie</a></li>
+                        <li class="dropstart">
+                            <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Tributes</a>
+                            <ul class="dropdown-menu shadow">
+                                <li><a class="dropdown-item" href="about_tributes_JM.html"> John Musa</a></li>
+                                <li><a class="dropdown-item" href="about_tributes_JCL.html"> Jean-Claude Laprie</a></li>
                             </ul>
                         </li>
                     </ul>

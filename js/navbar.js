@@ -1,52 +1,12 @@
-//
-// from https://bootstrap-menu.com/detail-multilevel.html
-//
+// Retrieved from codepen.io
 
-document.addEventListener("DOMContentLoaded", function() {
+// (c) 2020-2021 Written by Simon Köhler in Panama
+// github.com/koehlersimon
+// simon-koehler.com
 
-
-    /////// Prevent closing from click inside dropdown
-    document.querySelectorAll('.dropdown-menu').forEach(function(element) {
-        element.addEventListener('click', function(e) {
-            e.stopPropagation();
-        });
-    })
-
-
-
-    // make it as accordion for smaller screens
-    if (window.innerWidth < 992) {
-
-        // close all inner dropdowns when parent is closed
-        document.querySelectorAll('.navbar .dropdown').forEach(function(everydropdown) {
-            everydropdown.addEventListener('hidden.bs.dropdown', function() {
-                // after dropdown is hidden, then find all submenus
-                this.querySelectorAll('.submenu').forEach(function(everysubmenu) {
-                    // hide every submenu as well
-                    everysubmenu.style.display = 'none';
-                });
-            })
-        });
-
-        document.querySelectorAll('.dropdown-menu a').forEach(function(element) {
-            element.addEventListener('click', function(e) {
-
-                let nextEl = this.nextElementSibling;
-                if (nextEl && nextEl.classList.contains('submenu')) {
-                    // prevent opening link if link needs to open dropdown
-                    e.preventDefault();
-                    console.log(nextEl);
-                    if (nextEl.style.display == 'block') {
-                        nextEl.style.display = 'none';
-                    } else {
-                        nextEl.style.display = 'block';
-                    }
-
-                }
-            });
-        })
+document.addEventListener('click', function(e) {
+    // Hamburger menu
+    if (e.target.classList.contains('hamburger-toggle')) {
+        e.target.children[0].classList.toggle('active');
     }
-    // end if innerWidth
-
-});
-// DOMContentLoaded  end
+})
